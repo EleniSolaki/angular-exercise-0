@@ -16,11 +16,11 @@
         <app-user-input (inputValueEmitter)="handleInputValue($event)"></app-user-input>
         </div>
         <div class="col-5 m-3 border border-success border-3">
-            <h6>Even words:</h6>
+            <h6>Even letters:</h6>
         <app-even-words *ngIf="isEven" [words]="words"></app-even-words>
         </div>
         <div class="col-5 m-3 border border-success border-3">
-            <h6>Odd words:</h6>
+            <h6>Odd letters:</h6>
             <app-odd-words *ngIf="!isEven" [words]="words"></app-odd-words>
         </div>
     </div>
