@@ -1,5 +1,8 @@
 <div>
-  <ul>
-    <li *ngFor="let word of words">{{ words }}</li>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let word of evenWords">{{ word }}</li>
   </ul>
+  <div *ngIf="evenWords.length === 0">
+    <p>No even length words yet</p>
+  </div>
 </div>

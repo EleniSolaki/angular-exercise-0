@@ -8,11 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name= 'Eleni Solaki'
   title = 'angular-exercise-0';
-  words: string[] = [];
-  isEven = true;
+  evenWords: string[] = [];
+  oddWords: string[] = [];
 
-  handleInputValue(inputValue: string) {
-    this.words = inputValue.split(' ');
-    this.isEven = this.words.every((word) => word.length % 2 === 0);
+  onWordAdded(word: string) {
+    if (word.length % 2 === 0) {
+      this.evenWords.push(word);
+    } else {
+      this.oddWords.push(word);
+    }
   }
 }

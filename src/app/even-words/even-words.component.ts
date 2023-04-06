@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./even-words.component.css']
 })
 export class EvenWordsComponent {
- @Input()words: string[]=[];
+  //@Input() isEven!: boolean;
+  @Input() evenWords: string[]=[];
 }
