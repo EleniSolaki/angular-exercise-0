@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  name= 'Eleni Solaki'
   title = 'angular-exercise-0';
   words: string[] = [];
   isEven = true;
